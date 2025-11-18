@@ -1,0 +1,14 @@
+# Ignore secrets folder
+secrets/
+
+# Ignore environment files
+.env
+*.env
+
+# Ignore Python artifacts
+__pycache__/
+*.pyc
+
+# Ignore virtual environments
+venv/
+.env/
