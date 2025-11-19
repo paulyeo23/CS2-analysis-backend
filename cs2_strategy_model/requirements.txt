@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+networkx
+tensorflow
+scikit-learn
+pydot
+graphviz
+visualkeras
+ann_visualizer
+pyvis
+seaborn

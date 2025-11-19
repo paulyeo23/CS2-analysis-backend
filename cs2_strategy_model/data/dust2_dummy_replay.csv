@@ -1,0 +1,4 @@
+time_elapsed,team_money,enemy_money,team_alive,enemy_alive,bomb_planted,bomb_site_A,bomb_site_B,team_flashes,enemy_flashes,round_number,score_diff,win
+60,25000,20000,4,3,1,1,0,2,1,12,2,1
+45,18000,22000,5,4,0,0,1,1,2,8,-1,1
+30,15000,17000,3,2,1,0,1,0,1,20,3,1
