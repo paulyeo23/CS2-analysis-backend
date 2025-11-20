@@ -2,7 +2,7 @@ from google.cloud import storage
 from google.cloud.storage.transfer_manager import upload_many_from_filenames
 from pathlib import Path
 import sys
-import os
+
 
 def upload_to_cloud(bucket_name, source_directory, destination_blob, workers=8):
     client = storage.Client()
@@ -13,10 +13,12 @@ def upload_to_cloud(bucket_name, source_directory, destination_blob, workers=8):
     # create list of files to upload
     directory_as_path_obj = Path(source_directory)
     paths = directory_as_path_obj.rglob("*")
+    
 
     file_paths = [path for path in paths if path.is_file()]
     relative_paths = [path.relative_to(source_directory) for path in file_paths]
     string_paths = [str(path) for path in relative_paths]
+
     
     # # Upload a single file
     # print(f"Uploading {local_file_path} → gs://{bucket_name}/{destination_blob}")
