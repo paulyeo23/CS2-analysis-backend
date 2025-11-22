@@ -69,3 +69,14 @@ The `src` folder contains the main modules and scripts for the project:
 - **`nn/nn_model_pipeline.py`** – Functions to train, test, and evaluate the neural network model for predicting player movements.
 - **`utils.py`** – Utility functions for loading data, plotting graphs, and general helper methods.
 - **`win_probability_model.py`** – Concept model used as an experiment and for progress report. Not used in final implementation.
+
+### Markov Chain Visualization
+
+The interactive Markov chain graph for each map is saved as an HTML file.  
+Below is a screenshot example of the visualization for dust2 map:
+
+![Markov Graph Screenshot](output/markov/dust2/full_graph.png)
+
+![Markov Graph Zoomed in Screenshot](output/markov/dust2/zoomed_in.png)
+
+You can also view the interactive HTML version of the graph [here](output/markov/dust2/markov_graph.html).
