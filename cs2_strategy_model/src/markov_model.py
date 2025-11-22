@@ -21,7 +21,7 @@ class MarkovMap:
         self.transition_matrix = self.build_prob_matrix()
         #self.transitions = transitions
         #self.transitions = self.build_transitions_from_csv(mapfile)
-        print(self.transitions)
+        #print(self.transitions)
         #self.states = list(self.transitions.keys())
         #self.transition_matrix = self.build_equal_prob_matrix() #this is default behavior
         #this would need to be changed with the trained model
@@ -57,7 +57,7 @@ class MarkovMap:
                         mat[i][j] = p
             else:
                 #use real probs
-                print(f"using real probs: {self.probabilities[s]}")
+                #print(f"using real probs: {self.probabilities[s]}")
                 probs = self.probabilities[s]
                 for next_s, prob in zip(next_states, probs):
                     j = self.states.index(next_s)

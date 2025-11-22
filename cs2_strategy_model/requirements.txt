@@ -1,6 +1,7 @@
 numpy
 pandas
 matplotlib
+seaborn
 networkx
 tensorflow
 scikit-learn
@@ -9,4 +10,3 @@ graphviz
 visualkeras
 ann_visualizer
 pyvis
-seaborn

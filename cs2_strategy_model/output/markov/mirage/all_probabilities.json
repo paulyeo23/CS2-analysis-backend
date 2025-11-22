@@ -1,0 +1,2941 @@
+[
+    {
+        "name": "outside_tunnels",
+        "children": [
+            {
+                "name": "suicide",
+                "probability": 0.03999024628139478,
+                "children": [
+                    {
+                        "name": "mid",
+                        "probability": 0.061124694376528114
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4058679706601467
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.1198044009779951
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.3056234718826406
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.10268948655256724
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.004889975550122249
+                    }
+                ]
+            },
+            {
+                "name": "upper_tunnels",
+                "probability": 0.12801755669348938,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4722502522704339
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.11301715438950555
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.29969727547931385
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.055499495459132187
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.004036326942482341
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.050454086781029264
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.004036326942482341
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.0010090817356205853
+                    }
+                ]
+            },
+            {
+                "name": "t_spawn",
+                "probability": 0.5896122896854425,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.5411165160991429
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.30669446374797316
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.1290247857308316
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.004169562195969423
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.009497336113041464
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.001853138753764188
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.006949270326615705
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.0006949270326615705
+                    }
+                ]
+            },
+            {
+                "name": "mid",
+                "probability": 0.08510119483052914,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4434865900383142
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06896551724137931
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.028735632183908046
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.1657088122605364
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.12164750957854406
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.16666666666666666
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.0028735632183908046
+                    },
+                    {
+                        "name": "lower_tunnels",
+                        "probability": 0.0009578544061302681
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.0009578544061302681
+                    }
+                ]
+            },
+            {
+                "name": "doubledoors",
+                "probability": 0.046086320409656184,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.09690553745928339
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.28013029315960913
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.011400651465798045
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.11563517915309446
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.3982084690553746
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.06351791530944625
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.029315960912052116
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.0016286644951140066
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.003257328990228013
+                    }
+                ]
+            },
+            {
+                "name": "outside_long_doors",
+                "probability": 0.11094854913435748,
+                "children": [
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.5028456645463676
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.057917643120187476
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.06394375627720121
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.14797455641111484
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06561767659859391
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.13960495480415133
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.009039169735520589
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.010043521928356211
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.003013056578506863
+                    }
+                ]
+            },
+            {
+                "name": "long_A",
+                "probability": 0.000243842965130456,
+                "children": [
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.06976744186046512
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.23255813953488372
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.46511627906976744
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.023255813953488372
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.13953488372093023
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.023255813953488372
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.046511627906976744
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "suicide",
+        "children": [
+            {
+                "name": "mid",
+                "probability": 0.061124694376528114,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4434865900383142
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06896551724137931
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.028735632183908046
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.1657088122605364
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.12164750957854406
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.16666666666666666
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.0028735632183908046
+                    },
+                    {
+                        "name": "lower_tunnels",
+                        "probability": 0.0009578544061302681
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.0009578544061302681
+                    }
+                ]
+            },
+            {
+                "name": "outside_tunnels",
+                "probability": 0.4058679706601467,
+                "children": [
+                    {
+                        "name": "suicide",
+                        "probability": 0.03999024628139478
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.12801755669348938
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.5896122896854425
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.08510119483052914
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.046086320409656184
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.11094854913435748
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.000243842965130456
+                    }
+                ]
+            },
+            {
+                "name": "t_spawn",
+                "probability": 0.1198044009779951,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.5411165160991429
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.30669446374797316
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.1290247857308316
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.004169562195969423
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.009497336113041464
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.001853138753764188
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.006949270326615705
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.0006949270326615705
+                    }
+                ]
+            },
+            {
+                "name": "outside_long_doors",
+                "probability": 0.3056234718826406,
+                "children": [
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.5028456645463676
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.057917643120187476
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.06394375627720121
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.14797455641111484
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06561767659859391
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.13960495480415133
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.009039169735520589
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.010043521928356211
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.003013056578506863
+                    }
+                ]
+            },
+            {
+                "name": "doubledoors",
+                "probability": 0.10268948655256724,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.09690553745928339
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.28013029315960913
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.011400651465798045
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.11563517915309446
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.3982084690553746
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.06351791530944625
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.029315960912052116
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.0016286644951140066
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.003257328990228013
+                    }
+                ]
+            },
+            {
+                "name": "upper_tunnels",
+                "probability": 0.004889975550122249,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4722502522704339
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.11301715438950555
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.29969727547931385
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.055499495459132187
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.004036326942482341
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.050454086781029264
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.004036326942482341
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.0010090817356205853
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "mid",
+        "children": [
+            {
+                "name": "outside_tunnels",
+                "probability": 0.4434865900383142,
+                "children": [
+                    {
+                        "name": "suicide",
+                        "probability": 0.03999024628139478
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.12801755669348938
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.5896122896854425
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.08510119483052914
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.046086320409656184
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.11094854913435748
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.000243842965130456
+                    }
+                ]
+            },
+            {
+                "name": "doubledoors",
+                "probability": 0.06896551724137931,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.09690553745928339
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.28013029315960913
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.011400651465798045
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.11563517915309446
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.3982084690553746
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.06351791530944625
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.029315960912052116
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.0016286644951140066
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.003257328990228013
+                    }
+                ]
+            },
+            {
+                "name": "suicide",
+                "probability": 0.028735632183908046,
+                "children": [
+                    {
+                        "name": "mid",
+                        "probability": 0.061124694376528114
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4058679706601467
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.1198044009779951
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.3056234718826406
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.10268948655256724
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.004889975550122249
+                    }
+                ]
+            },
+            {
+                "name": "outside_long_doors",
+                "probability": 0.1657088122605364,
+                "children": [
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.5028456645463676
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.057917643120187476
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.06394375627720121
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.14797455641111484
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06561767659859391
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.13960495480415133
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.009039169735520589
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.010043521928356211
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.003013056578506863
+                    }
+                ]
+            },
+            {
+                "name": "t_spawn",
+                "probability": 0.12164750957854406,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.5411165160991429
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.30669446374797316
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.1290247857308316
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.004169562195969423
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.009497336113041464
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.001853138753764188
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.006949270326615705
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.0006949270326615705
+                    }
+                ]
+            },
+            {
+                "name": "upper_tunnels",
+                "probability": 0.16666666666666666,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4722502522704339
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.11301715438950555
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.29969727547931385
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.055499495459132187
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.004036326942482341
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.050454086781029264
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.004036326942482341
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.0010090817356205853
+                    }
+                ]
+            },
+            {
+                "name": "long_A",
+                "probability": 0.0028735632183908046,
+                "children": [
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.06976744186046512
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.23255813953488372
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.46511627906976744
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.023255813953488372
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.13953488372093023
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.023255813953488372
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.046511627906976744
+                    }
+                ]
+            },
+            {
+                "name": "lower_tunnels",
+                "probability": 0.0009578544061302681,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 1.0
+                    }
+                ]
+            },
+            {
+                "name": "upper_mid",
+                "probability": 0.0009578544061302681,
+                "children": [
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.28
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.14
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.18
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.14
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.04
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.16
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "upper_tunnels",
+        "children": [
+            {
+                "name": "outside_tunnels",
+                "probability": 0.4722502522704339,
+                "children": [
+                    {
+                        "name": "suicide",
+                        "probability": 0.03999024628139478
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.12801755669348938
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.5896122896854425
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.08510119483052914
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.046086320409656184
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.11094854913435748
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.000243842965130456
+                    }
+                ]
+            },
+            {
+                "name": "doubledoors",
+                "probability": 0.11301715438950555,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.09690553745928339
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.28013029315960913
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.011400651465798045
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.11563517915309446
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.3982084690553746
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.06351791530944625
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.029315960912052116
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.0016286644951140066
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.003257328990228013
+                    }
+                ]
+            },
+            {
+                "name": "outside_long_doors",
+                "probability": 0.29969727547931385,
+                "children": [
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.5028456645463676
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.057917643120187476
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.06394375627720121
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.14797455641111484
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06561767659859391
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.13960495480415133
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.009039169735520589
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.010043521928356211
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.003013056578506863
+                    }
+                ]
+            },
+            {
+                "name": "t_spawn",
+                "probability": 0.055499495459132187,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.5411165160991429
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.30669446374797316
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.1290247857308316
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.004169562195969423
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.009497336113041464
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.001853138753764188
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.006949270326615705
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.0006949270326615705
+                    }
+                ]
+            },
+            {
+                "name": "suicide",
+                "probability": 0.004036326942482341,
+                "children": [
+                    {
+                        "name": "mid",
+                        "probability": 0.061124694376528114
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4058679706601467
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.1198044009779951
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.3056234718826406
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.10268948655256724
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.004889975550122249
+                    }
+                ]
+            },
+            {
+                "name": "mid",
+                "probability": 0.050454086781029264,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4434865900383142
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06896551724137931
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.028735632183908046
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.1657088122605364
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.12164750957854406
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.16666666666666666
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.0028735632183908046
+                    },
+                    {
+                        "name": "lower_tunnels",
+                        "probability": 0.0009578544061302681
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.0009578544061302681
+                    }
+                ]
+            },
+            {
+                "name": "upper_mid",
+                "probability": 0.004036326942482341,
+                "children": [
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.28
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.14
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.18
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.14
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.04
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.16
+                    }
+                ]
+            },
+            {
+                "name": "catwalk",
+                "probability": 0.0010090817356205853,
+                "children": [
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.15
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.25
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.05
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.25
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.15
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.05
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "t_spawn",
+        "children": [
+            {
+                "name": "outside_tunnels",
+                "probability": 0.5411165160991429,
+                "children": [
+                    {
+                        "name": "suicide",
+                        "probability": 0.03999024628139478
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.12801755669348938
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.5896122896854425
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.08510119483052914
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.046086320409656184
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.11094854913435748
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.000243842965130456
+                    }
+                ]
+            },
+            {
+                "name": "outside_long_doors",
+                "probability": 0.30669446374797316,
+                "children": [
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.5028456645463676
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.057917643120187476
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.06394375627720121
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.14797455641111484
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06561767659859391
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.13960495480415133
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.009039169735520589
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.010043521928356211
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.003013056578506863
+                    }
+                ]
+            },
+            {
+                "name": "doubledoors",
+                "probability": 0.1290247857308316,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.09690553745928339
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.28013029315960913
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.011400651465798045
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.11563517915309446
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.3982084690553746
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.06351791530944625
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.029315960912052116
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.0016286644951140066
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.003257328990228013
+                    }
+                ]
+            },
+            {
+                "name": "suicide",
+                "probability": 0.004169562195969423,
+                "children": [
+                    {
+                        "name": "mid",
+                        "probability": 0.061124694376528114
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4058679706601467
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.1198044009779951
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.3056234718826406
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.10268948655256724
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.004889975550122249
+                    }
+                ]
+            },
+            {
+                "name": "mid",
+                "probability": 0.009497336113041464,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4434865900383142
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06896551724137931
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.028735632183908046
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.1657088122605364
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.12164750957854406
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.16666666666666666
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.0028735632183908046
+                    },
+                    {
+                        "name": "lower_tunnels",
+                        "probability": 0.0009578544061302681
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.0009578544061302681
+                    }
+                ]
+            },
+            {
+                "name": "long_A",
+                "probability": 0.001853138753764188,
+                "children": [
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.06976744186046512
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.23255813953488372
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.46511627906976744
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.023255813953488372
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.13953488372093023
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.023255813953488372
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.046511627906976744
+                    }
+                ]
+            },
+            {
+                "name": "upper_tunnels",
+                "probability": 0.006949270326615705,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4722502522704339
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.11301715438950555
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.29969727547931385
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.055499495459132187
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.004036326942482341
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.050454086781029264
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.004036326942482341
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.0010090817356205853
+                    }
+                ]
+            },
+            {
+                "name": "catwalk",
+                "probability": 0.0006949270326615705,
+                "children": [
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.15
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.25
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.05
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.25
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.15
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.05
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "doubledoors",
+        "children": [
+            {
+                "name": "outside_tunnels",
+                "probability": 0.09690553745928339,
+                "children": [
+                    {
+                        "name": "suicide",
+                        "probability": 0.03999024628139478
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.12801755669348938
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.5896122896854425
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.08510119483052914
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.046086320409656184
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.11094854913435748
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.000243842965130456
+                    }
+                ]
+            },
+            {
+                "name": "t_spawn",
+                "probability": 0.28013029315960913,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.5411165160991429
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.30669446374797316
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.1290247857308316
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.004169562195969423
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.009497336113041464
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.001853138753764188
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.006949270326615705
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.0006949270326615705
+                    }
+                ]
+            },
+            {
+                "name": "upper_mid",
+                "probability": 0.011400651465798045,
+                "children": [
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.28
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.14
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.18
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.14
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.04
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.16
+                    }
+                ]
+            },
+            {
+                "name": "mid",
+                "probability": 0.11563517915309446,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4434865900383142
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06896551724137931
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.028735632183908046
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.1657088122605364
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.12164750957854406
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.16666666666666666
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.0028735632183908046
+                    },
+                    {
+                        "name": "lower_tunnels",
+                        "probability": 0.0009578544061302681
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.0009578544061302681
+                    }
+                ]
+            },
+            {
+                "name": "outside_long_doors",
+                "probability": 0.3982084690553746,
+                "children": [
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.5028456645463676
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.057917643120187476
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.06394375627720121
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.14797455641111484
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06561767659859391
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.13960495480415133
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.009039169735520589
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.010043521928356211
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.003013056578506863
+                    }
+                ]
+            },
+            {
+                "name": "upper_tunnels",
+                "probability": 0.06351791530944625,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4722502522704339
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.11301715438950555
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.29969727547931385
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.055499495459132187
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.004036326942482341
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.050454086781029264
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.004036326942482341
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.0010090817356205853
+                    }
+                ]
+            },
+            {
+                "name": "suicide",
+                "probability": 0.029315960912052116,
+                "children": [
+                    {
+                        "name": "mid",
+                        "probability": 0.061124694376528114
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4058679706601467
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.1198044009779951
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.3056234718826406
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.10268948655256724
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.004889975550122249
+                    }
+                ]
+            },
+            {
+                "name": "long_A",
+                "probability": 0.0016286644951140066,
+                "children": [
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.06976744186046512
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.23255813953488372
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.46511627906976744
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.023255813953488372
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.13953488372093023
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.023255813953488372
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.046511627906976744
+                    }
+                ]
+            },
+            {
+                "name": "catwalk",
+                "probability": 0.003257328990228013,
+                "children": [
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.15
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.25
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.05
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.25
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.15
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.05
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "outside_long_doors",
+        "children": [
+            {
+                "name": "t_spawn",
+                "probability": 0.5028456645463676,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.5411165160991429
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.30669446374797316
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.1290247857308316
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.004169562195969423
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.009497336113041464
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.001853138753764188
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.006949270326615705
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.0006949270326615705
+                    }
+                ]
+            },
+            {
+                "name": "suicide",
+                "probability": 0.057917643120187476,
+                "children": [
+                    {
+                        "name": "mid",
+                        "probability": 0.061124694376528114
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4058679706601467
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.1198044009779951
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.3056234718826406
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.10268948655256724
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.004889975550122249
+                    }
+                ]
+            },
+            {
+                "name": "upper_tunnels",
+                "probability": 0.06394375627720121,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4722502522704339
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.11301715438950555
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.29969727547931385
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.055499495459132187
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.004036326942482341
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.050454086781029264
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.004036326942482341
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.0010090817356205853
+                    }
+                ]
+            },
+            {
+                "name": "mid",
+                "probability": 0.14797455641111484,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4434865900383142
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06896551724137931
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.028735632183908046
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.1657088122605364
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.12164750957854406
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.16666666666666666
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.0028735632183908046
+                    },
+                    {
+                        "name": "lower_tunnels",
+                        "probability": 0.0009578544061302681
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.0009578544061302681
+                    }
+                ]
+            },
+            {
+                "name": "doubledoors",
+                "probability": 0.06561767659859391,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.09690553745928339
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.28013029315960913
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.011400651465798045
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.11563517915309446
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.3982084690553746
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.06351791530944625
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.029315960912052116
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.0016286644951140066
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.003257328990228013
+                    }
+                ]
+            },
+            {
+                "name": "outside_tunnels",
+                "probability": 0.13960495480415133,
+                "children": [
+                    {
+                        "name": "suicide",
+                        "probability": 0.03999024628139478
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.12801755669348938
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.5896122896854425
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.08510119483052914
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.046086320409656184
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.11094854913435748
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.000243842965130456
+                    }
+                ]
+            },
+            {
+                "name": "long_A",
+                "probability": 0.009039169735520589,
+                "children": [
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.06976744186046512
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.23255813953488372
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.46511627906976744
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.023255813953488372
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.13953488372093023
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.023255813953488372
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.046511627906976744
+                    }
+                ]
+            },
+            {
+                "name": "upper_mid",
+                "probability": 0.010043521928356211,
+                "children": [
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.28
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.14
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.18
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.14
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.04
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.16
+                    }
+                ]
+            },
+            {
+                "name": "catwalk",
+                "probability": 0.003013056578506863,
+                "children": [
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.15
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.25
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.05
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.25
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.15
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.05
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "upper_mid",
+        "children": [
+            {
+                "name": "upper_tunnels",
+                "probability": 0.28,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4722502522704339
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.11301715438950555
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.29969727547931385
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.055499495459132187
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.004036326942482341
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.050454086781029264
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.004036326942482341
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.0010090817356205853
+                    }
+                ]
+            },
+            {
+                "name": "mid",
+                "probability": 0.14,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4434865900383142
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06896551724137931
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.028735632183908046
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.1657088122605364
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.12164750957854406
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.16666666666666666
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.0028735632183908046
+                    },
+                    {
+                        "name": "lower_tunnels",
+                        "probability": 0.0009578544061302681
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.0009578544061302681
+                    }
+                ]
+            },
+            {
+                "name": "outside_tunnels",
+                "probability": 0.18,
+                "children": [
+                    {
+                        "name": "suicide",
+                        "probability": 0.03999024628139478
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.12801755669348938
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.5896122896854425
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.08510119483052914
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.046086320409656184
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.11094854913435748
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.000243842965130456
+                    }
+                ]
+            },
+            {
+                "name": "t_spawn",
+                "probability": 0.14,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.5411165160991429
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.30669446374797316
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.1290247857308316
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.004169562195969423
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.009497336113041464
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.001853138753764188
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.006949270326615705
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.0006949270326615705
+                    }
+                ]
+            },
+            {
+                "name": "doubledoors",
+                "probability": 0.06,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.09690553745928339
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.28013029315960913
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.011400651465798045
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.11563517915309446
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.3982084690553746
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.06351791530944625
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.029315960912052116
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.0016286644951140066
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.003257328990228013
+                    }
+                ]
+            },
+            {
+                "name": "catwalk",
+                "probability": 0.04,
+                "children": [
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.15
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.25
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.05
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.25
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.15
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.05
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.1
+                    }
+                ]
+            },
+            {
+                "name": "outside_long_doors",
+                "probability": 0.16,
+                "children": [
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.5028456645463676
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.057917643120187476
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.06394375627720121
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.14797455641111484
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06561767659859391
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.13960495480415133
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.009039169735520589
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.010043521928356211
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.003013056578506863
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "long_A",
+        "children": [
+            {
+                "name": "t_spawn",
+                "probability": 0.06976744186046512,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.5411165160991429
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.30669446374797316
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.1290247857308316
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.004169562195969423
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.009497336113041464
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.001853138753764188
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.006949270326615705
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.0006949270326615705
+                    }
+                ]
+            },
+            {
+                "name": "outside_tunnels",
+                "probability": 0.23255813953488372,
+                "children": [
+                    {
+                        "name": "suicide",
+                        "probability": 0.03999024628139478
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.12801755669348938
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.5896122896854425
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.08510119483052914
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.046086320409656184
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.11094854913435748
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.000243842965130456
+                    }
+                ]
+            },
+            {
+                "name": "outside_long_doors",
+                "probability": 0.46511627906976744,
+                "children": [
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.5028456645463676
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.057917643120187476
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.06394375627720121
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.14797455641111484
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06561767659859391
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.13960495480415133
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.009039169735520589
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.010043521928356211
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.003013056578506863
+                    }
+                ]
+            },
+            {
+                "name": "upper_mid",
+                "probability": 0.023255813953488372,
+                "children": [
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.28
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.14
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.18
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.14
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.04
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.16
+                    }
+                ]
+            },
+            {
+                "name": "doubledoors",
+                "probability": 0.13953488372093023,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.09690553745928339
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.28013029315960913
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.011400651465798045
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.11563517915309446
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.3982084690553746
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.06351791530944625
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.029315960912052116
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.0016286644951140066
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.003257328990228013
+                    }
+                ]
+            },
+            {
+                "name": "catwalk",
+                "probability": 0.023255813953488372,
+                "children": [
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.15
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.25
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.05
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.25
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.15
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.05
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.1
+                    }
+                ]
+            },
+            {
+                "name": "mid",
+                "probability": 0.046511627906976744,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4434865900383142
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06896551724137931
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.028735632183908046
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.1657088122605364
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.12164750957854406
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.16666666666666666
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.0028735632183908046
+                    },
+                    {
+                        "name": "lower_tunnels",
+                        "probability": 0.0009578544061302681
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.0009578544061302681
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "catwalk",
+        "children": [
+            {
+                "name": "t_spawn",
+                "probability": 0.15,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.5411165160991429
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.30669446374797316
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.1290247857308316
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.004169562195969423
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.009497336113041464
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.001853138753764188
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.006949270326615705
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.0006949270326615705
+                    }
+                ]
+            },
+            {
+                "name": "outside_tunnels",
+                "probability": 0.25,
+                "children": [
+                    {
+                        "name": "suicide",
+                        "probability": 0.03999024628139478
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.12801755669348938
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.5896122896854425
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.08510119483052914
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.046086320409656184
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.11094854913435748
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.000243842965130456
+                    }
+                ]
+            },
+            {
+                "name": "suicide",
+                "probability": 0.05,
+                "children": [
+                    {
+                        "name": "mid",
+                        "probability": 0.061124694376528114
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4058679706601467
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.1198044009779951
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.3056234718826406
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.10268948655256724
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.004889975550122249
+                    }
+                ]
+            },
+            {
+                "name": "outside_long_doors",
+                "probability": 0.25,
+                "children": [
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.5028456645463676
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.057917643120187476
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.06394375627720121
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.14797455641111484
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06561767659859391
+                    },
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.13960495480415133
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.009039169735520589
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.010043521928356211
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.003013056578506863
+                    }
+                ]
+            },
+            {
+                "name": "upper_tunnels",
+                "probability": 0.15,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4722502522704339
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.11301715438950555
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.29969727547931385
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.055499495459132187
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.004036326942482341
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.050454086781029264
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.004036326942482341
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.0010090817356205853
+                    }
+                ]
+            },
+            {
+                "name": "mid",
+                "probability": 0.05,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.4434865900383142
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.06896551724137931
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.028735632183908046
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.1657088122605364
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.12164750957854406
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.16666666666666666
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.0028735632183908046
+                    },
+                    {
+                        "name": "lower_tunnels",
+                        "probability": 0.0009578544061302681
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.0009578544061302681
+                    }
+                ]
+            },
+            {
+                "name": "doubledoors",
+                "probability": 0.1,
+                "children": [
+                    {
+                        "name": "outside_tunnels",
+                        "probability": 0.09690553745928339
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.28013029315960913
+                    },
+                    {
+                        "name": "upper_mid",
+                        "probability": 0.011400651465798045
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.11563517915309446
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.3982084690553746
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.06351791530944625
+                    },
+                    {
+                        "name": "suicide",
+                        "probability": 0.029315960912052116
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.0016286644951140066
+                    },
+                    {
+                        "name": "catwalk",
+                        "probability": 0.003257328990228013
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "lower_tunnels",
+        "children": [
+            {
+                "name": "outside_tunnels",
+                "probability": 1.0,
+                "children": [
+                    {
+                        "name": "suicide",
+                        "probability": 0.03999024628139478
+                    },
+                    {
+                        "name": "upper_tunnels",
+                        "probability": 0.12801755669348938
+                    },
+                    {
+                        "name": "t_spawn",
+                        "probability": 0.5896122896854425
+                    },
+                    {
+                        "name": "mid",
+                        "probability": 0.08510119483052914
+                    },
+                    {
+                        "name": "doubledoors",
+                        "probability": 0.046086320409656184
+                    },
+                    {
+                        "name": "outside_long_doors",
+                        "probability": 0.11094854913435748
+                    },
+                    {
+                        "name": "long_A",
+                        "probability": 0.000243842965130456
+                    }
+                ]
+            }
+        ]
+    }
+]
