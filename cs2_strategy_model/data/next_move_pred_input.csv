@@ -1,1 +1,0 @@
-player_x, player_y, current_zone_onehot, health, primary_weapon_onehot, weapon_purchases_this_round,  teammates_alive, enemies_alive, bomb_state, time_remaining, total_rounds_played, score_diff, zone_after_128_ticks (label), zone_after_32_ticks (label), zone_after_64_ticks (label)

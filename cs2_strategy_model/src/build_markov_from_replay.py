@@ -108,7 +108,7 @@ def merge_transitions(master, new_trans):
 # Function to convert the CSV data into a nested JSON structure
 def trans_prob_to_json(trans,theroot="t_spawn"):
     trans_tree = defaultdict(list)
-    print(trans)
+    #print(trans)
     for i, row in trans.iterrows():
         trans_tree[row["from"]].append({"name": row["to"], "probability": row["probability"]})
 
@@ -120,14 +120,14 @@ def trans_prob_to_json(trans,theroot="t_spawn"):
     #roots = list(all_parents - all_children)
     #print(f"roots is parents that are not children: {roots}")
     roots = [theroot]
-    print(f"the root is {theroot}")
+    #print(f"the root is {theroot}")
     if (theroot.casefold() == "all".casefold()):
             roots = list(trans_tree.keys())
     result = []
     for root in roots:
         level1_node = {"name": root, "children": []}
         has_children = len(trans_tree.get(root, [])) > 0
-        print(f"root {root} has {has_children} children {trans_tree.get(root, [])}")
+        #print(f"root {root} has {has_children} children {trans_tree.get(root, [])}")
         #add children and then just their children, no more
         for child1 in trans_tree.get(root, []):
             #print(f"do i get the child for this node: {child1}")
@@ -230,7 +230,7 @@ def build_markov_for_all_maps(folder_path, output_dir, min_ticks=32):
             if "_ticks" in fname:
                 mapname = re.search(r"-([^-\n]+)_ticks", fname).group(1)
                 #mapname = fname.split("_ticks")[0]
-                print(f"mapname is {mapname}")
+                #print(f"mapname is {mapname}")
                 map_files[mapname].append(fname)
     if len(map_files) == 0:
         print("No tick files found")
@@ -270,12 +270,12 @@ def build_markov_for_all_maps(folder_path, output_dir, min_ticks=32):
         final_df.to_csv(full_csv, index=False)
         final_df[["from", "to"]].to_csv(simple_csv, index=False)
 
-        print(f"  Saved: {full_csv} and {simple_csv}")
+        #print(f"  Saved: {full_csv} and {simple_csv}")
         if mapname not in ret:
             ret[mapname] = None
         ret[mapname] = final_df
 
-    print("\nAll maps processed",ret)
+    print("\nAll maps processed")
     return ret
 
 def filter_same_zone(df, current_col="current_zone", next_col="next_zone"):
@@ -306,7 +306,7 @@ def build_tests_markov_for_all_maps(folder_path, output_dir, min_ticks=32):
 
     # per map processing
     for mapname, file_list in test_files.items():
-        print(f"\nProcessing map: {mapname} having {len(file_list)} files")
+        print(f"\nProcessing map tests: {mapname} having {len(file_list)} files")
 
         output_prefix = os.path.join(output_dir, mapname)
         temp_files = [os.path.join(folder_path, f) for f in file_list]
@@ -329,7 +329,7 @@ def build_tests_markov_for_all_maps(folder_path, output_dir, min_ticks=32):
             ret[mapname] = None
         ret[mapname] = final_df
 
-    print("\nAll tests processed",ret)
+    print("\nAll tests processed")
     return ret
 
 

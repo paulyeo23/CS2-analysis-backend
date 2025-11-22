@@ -1,0 +1,18 @@
+                    precision    recall  f1-score   support
+
+           Unknown       0.00      0.00      0.00         1
+           catwalk       0.25      0.12      0.16        58
+       doubledoors       0.93      0.93      0.93      2129
+            long_A       0.00      0.00      0.00        51
+               mid       0.58      0.66      0.62      1391
+outside_long_doors       0.89      0.93      0.91      1704
+   outside_tunnels       0.89      0.68      0.77     14003
+           suicide       0.62      0.58      0.60       684
+           t_spawn       0.58      0.88      0.70      4407
+         upper_mid       0.64      0.62      0.63       108
+     upper_tunnels       0.81      0.92      0.86      6489
+
+          accuracy                           0.78     31025
+         macro avg       0.56      0.57      0.56     31025
+      weighted avg       0.81      0.78      0.78     31025
+Prediction Accuracy: 78.36%

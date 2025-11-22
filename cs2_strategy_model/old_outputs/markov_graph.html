@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="../lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 850px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#fb9f3a", "font": {"size": 40}, "id": "outside_tunnels", "label": "outside_tunnels", "shape": "dot", "size": 90.55555555555556, "title": "Zone: outside_tunnels\nConnections: 7"}, {"color": "#ed7953", "font": {"size": 40}, "id": "suicide", "label": "suicide", "shape": "dot", "size": 83.33333333333333, "title": "Zone: suicide\nConnections: 6"}, {"color": "#f0f921", "font": {"size": 40}, "id": "mid", "label": "mid", "shape": "dot", "size": 105.0, "title": "Zone: mid\nConnections: 9"}, {"color": "#fdca26", "font": {"size": 40}, "id": "upper_tunnels", "label": "upper_tunnels", "shape": "dot", "size": 97.77777777777777, "title": "Zone: upper_tunnels\nConnections: 8"}, {"color": "#fdca26", "font": {"size": 40}, "id": "t_spawn", "label": "t_spawn", "shape": "dot", "size": 97.77777777777777, "title": "Zone: t_spawn\nConnections: 8"}, {"color": "#f0f921", "font": {"size": 40}, "id": "doubledoors", "label": "doubledoors", "shape": "dot", "size": 105.0, "title": "Zone: doubledoors\nConnections: 9"}, {"color": "#f0f921", "font": {"size": 40}, "id": "outside_long_doors", "label": "outside_long_doors", "shape": "dot", "size": 105.0, "title": "Zone: outside_long_doors\nConnections: 9"}, {"color": "#fb9f3a", "font": {"size": 40}, "id": "upper_mid", "label": "upper_mid", "shape": "dot", "size": 90.55555555555556, "title": "Zone: upper_mid\nConnections: 7"}, {"color": "#ed7953", "font": {"size": 40}, "id": "long_A", "label": "long_A", "shape": "dot", "size": 83.33333333333333, "title": "Zone: long_A\nConnections: 6"}, {"color": "#fb9f3a", "font": {"size": 40}, "id": "catwalk", "label": "catwalk", "shape": "dot", "size": 90.55555555555556, "title": "Zone: catwalk\nConnections: 7"}, {"color": "#46039f", "font": {"size": 40}, "id": "lower_tunnels", "label": "lower_tunnels", "shape": "dot", "size": 47.22222222222222, "title": "Zone: lower_tunnels\nConnections: 1"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "fontweight": 2.2085308056872037, "from": "outside_tunnels", "label": "0.04", "title": "Probability: 0.04", "to": "suicide", "value": 0.0417061611374407, "weight": 1.2085308056872035}, {"arrows": "to", "fontweight": 2.4123222748815163, "from": "outside_tunnels", "label": "0.08", "title": "Probability: 0.08", "to": "mid", "value": 0.0824644549763033, "weight": 1.4123222748815165}, {"arrows": "to", "fontweight": 2.663507109004739, "from": "outside_tunnels", "label": "0.13", "title": "Probability: 0.13", "to": "upper_tunnels", "value": 0.1327014218009478, "weight": 1.663507109004739}, {"arrows": "to", "fontweight": 4.947867298578199, "from": "outside_tunnels", "label": "0.59", "title": "Probability: 0.59", "to": "t_spawn", "value": 0.5895734597156398, "weight": 3.947867298578199}, {"arrows": "to", "fontweight": 2.220379146919431, "from": "outside_tunnels", "label": "0.04", "title": "Probability: 0.04", "to": "doubledoors", "value": 0.0440758293838862, "weight": 1.220379146919431}, {"arrows": "to", "fontweight": 2.545023696682464, "from": "outside_tunnels", "label": "0.11", "title": "Probability: 0.11", "to": "outside_long_doors", "value": 0.1090047393364928, "weight": 1.545023696682464}, {"arrows": "to", "fontweight": 2.002369668246445, "from": "outside_tunnels", "label": "0.00", "title": "Probability: 0.00", "to": "long_A", "value": 0.000473933649289, "weight": 1.002369668246445}, {"arrows": "to", "fontweight": 4.041666666666666, "from": "suicide", "label": "0.41", "title": "Probability: 0.41", "to": "outside_tunnels", "value": 0.4083333333333333, "weight": 3.0416666666666665}, {"arrows": "to", "fontweight": 2.2291666666666665, "from": "suicide", "label": "0.05", "title": "Probability: 0.05", "to": "mid", "value": 0.0458333333333333, "weight": 1.2291666666666665}, {"arrows": "to", "fontweight": 2.0416666666666665, "from": "suicide", "label": "0.01", "title": "Probability: 0.01", "to": "upper_tunnels", "value": 0.0083333333333333, "weight": 1.0416666666666665}, {"arrows": "to", "fontweight": 2.7916666666666665, "from": "suicide", "label": "0.16", "title": "Probability: 0.16", "to": "t_spawn", "value": 0.1583333333333333, "weight": 1.7916666666666665}, {"arrows": "to", "fontweight": 2.5416666666666665, "from": "suicide", "label": "0.11", "title": "Probability: 0.11", "to": "doubledoors", "value": 0.1083333333333333, "weight": 1.5416666666666665}, {"arrows": "to", "fontweight": 3.3541666666666665, "from": "suicide", "label": "0.27", "title": "Probability: 0.27", "to": "outside_long_doors", "value": 0.2708333333333333, "weight": 2.3541666666666665}, {"arrows": "to", "fontweight": 4.171171171171171, "from": "mid", "label": "0.43", "title": "Probability: 0.43", "to": "outside_tunnels", "value": 0.4342342342342342, "weight": 3.1711711711711708}, {"arrows": "to", "fontweight": 2.189189189189189, "from": "mid", "label": "0.04", "title": "Probability: 0.04", "to": "suicide", "value": 0.0378378378378378, "weight": 1.189189189189189}, {"arrows": "to", "fontweight": 2.7747747747747744, "from": "mid", "label": "0.15", "title": "Probability: 0.15", "to": "upper_tunnels", "value": 0.1549549549549549, "weight": 1.7747747747747744}, {"arrows": "to", "fontweight": 2.6756756756756754, "from": "mid", "label": "0.14", "title": "Probability: 0.14", "to": "t_spawn", "value": 0.1351351351351351, "weight": 1.6756756756756754}, {"arrows": "to", "fontweight": 2.333333333333333, "from": "mid", "label": "0.07", "title": "Probability: 0.07", "to": "doubledoors", "value": 0.0666666666666666, "weight": 1.333333333333333}, {"arrows": "to", "fontweight": 2.8108108108108105, "from": "mid", "label": "0.16", "title": "Probability: 0.16", "to": "outside_long_doors", "value": 0.1621621621621621, "weight": 1.8108108108108105}, {"arrows": "to", "fontweight": 2.009009009009009, "from": "mid", "label": "0.00", "title": "Probability: 0.00", "to": "upper_mid", "value": 0.0018018018018018, "weight": 1.009009009009009}, {"arrows": "to", "fontweight": 2.027027027027027, "from": "mid", "label": "0.01", "title": "Probability: 0.01", "to": "long_A", "value": 0.0054054054054054, "weight": 1.027027027027027}, {"arrows": "to", "fontweight": 2.009009009009009, "from": "mid", "label": "0.00", "title": "Probability: 0.00", "to": "lower_tunnels", "value": 0.0018018018018018, "weight": 1.009009009009009}, {"arrows": "to", "fontweight": 4.4131274131274125, "from": "upper_tunnels", "label": "0.48", "title": "Probability: 0.48", "to": "outside_tunnels", "value": 0.4826254826254826, "weight": 3.413127413127413}, {"arrows": "to", "fontweight": 2.0386100386100385, "from": "upper_tunnels", "label": "0.01", "title": "Probability: 0.01", "to": "suicide", "value": 0.0077220077220077, "weight": 1.0386100386100385}, {"arrows": "to", "fontweight": 2.27027027027027, "from": "upper_tunnels", "label": "0.05", "title": "Probability: 0.05", "to": "mid", "value": 0.054054054054054, "weight": 1.27027027027027}, {"arrows": "to", "fontweight": 2.27027027027027, "from": "upper_tunnels", "label": "0.05", "title": "Probability: 0.05", "to": "t_spawn", "value": 0.054054054054054, "weight": 1.27027027027027}, {"arrows": "to", "fontweight": 2.579150579150579, "from": "upper_tunnels", "label": "0.12", "title": "Probability: 0.12", "to": "doubledoors", "value": 0.1158301158301158, "weight": 1.5791505791505789}, {"arrows": "to", "fontweight": 3.38996138996139, "from": "upper_tunnels", "label": "0.28", "title": "Probability: 0.28", "to": "outside_long_doors", "value": 0.277992277992278, "weight": 2.38996138996139}, {"arrows": "to", "fontweight": 2.0289575289575286, "from": "upper_tunnels", "label": "0.01", "title": "Probability: 0.01", "to": "upper_mid", "value": 0.0057915057915057, "weight": 1.0289575289575286}, {"arrows": "to", "fontweight": 2.0096525096525095, "from": "upper_tunnels", "label": "0.00", "title": "Probability: 0.00", "to": "catwalk", "value": 0.0019305019305019, "weight": 1.0096525096525095}, {"arrows": "to", "fontweight": 4.706766917293233, "from": "t_spawn", "label": "0.54", "title": "Probability: 0.54", "to": "outside_tunnels", "value": 0.5413533834586466, "weight": 3.706766917293233}, {"arrows": "to", "fontweight": 2.030959752321981, "from": "t_spawn", "label": "0.01", "title": "Probability: 0.01", "to": "suicide", "value": 0.0061919504643962, "weight": 1.030959752321981}, {"arrows": "to", "fontweight": 2.0486510393631137, "from": "t_spawn", "label": "0.01", "title": "Probability: 0.01", "to": "mid", "value": 0.0097302078726227, "weight": 1.0486510393631134}, {"arrows": "to", "fontweight": 2.0442282176028304, "from": "t_spawn", "label": "0.01", "title": "Probability: 0.01", "to": "upper_tunnels", "value": 0.0088456435205661, "weight": 1.0442282176028306}, {"arrows": "to", "fontweight": 2.6191950464396285, "from": "t_spawn", "label": "0.12", "title": "Probability: 0.12", "to": "doubledoors", "value": 0.1238390092879257, "weight": 1.6191950464396285}, {"arrows": "to", "fontweight": 3.543564794338788, "from": "t_spawn", "label": "0.31", "title": "Probability: 0.31", "to": "outside_long_doors", "value": 0.3087129588677576, "weight": 2.543564794338788}, {"arrows": "to", "fontweight": 2.004422821760283, "from": "t_spawn", "label": "0.00", "title": "Probability: 0.00", "to": "long_A", "value": 0.0008845643520566, "weight": 1.004422821760283}, {"arrows": "to", "fontweight": 2.0022114108801414, "from": "t_spawn", "label": "0.00", "title": "Probability: 0.00", "to": "catwalk", "value": 0.0004422821760283, "weight": 1.0022114108801414}, {"arrows": "to", "fontweight": 2.4545454545454546, "from": "doubledoors", "label": "0.09", "title": "Probability: 0.09", "to": "outside_tunnels", "value": 0.0909090909090909, "weight": 1.4545454545454546}, {"arrows": "to", "fontweight": 2.1515151515151514, "from": "doubledoors", "label": "0.03", "title": "Probability: 0.03", "to": "suicide", "value": 0.0303030303030303, "weight": 1.1515151515151514}, {"arrows": "to", "fontweight": 2.5741626794258368, "from": "doubledoors", "label": "0.11", "title": "Probability: 0.11", "to": "mid", "value": 0.1148325358851674, "weight": 1.574162679425837}, {"arrows": "to", "fontweight": 2.2870813397129184, "from": "doubledoors", "label": "0.06", "title": "Probability: 0.06", "to": "upper_tunnels", "value": 0.0574162679425837, "weight": 1.2870813397129184}, {"arrows": "to", "fontweight": 3.259968102073365, "from": "doubledoors", "label": "0.25", "title": "Probability: 0.25", "to": "t_spawn", "value": 0.251993620414673, "weight": 2.259968102073365}, {"arrows": "to", "fontweight": 4.2009569377990434, "from": "doubledoors", "label": "0.44", "title": "Probability: 0.44", "to": "outside_long_doors", "value": 0.4401913875598086, "weight": 3.200956937799043}, {"arrows": "to", "fontweight": 2.0398724082934603, "from": "doubledoors", "label": "0.01", "title": "Probability: 0.01", "to": "upper_mid", "value": 0.0079744816586921, "weight": 1.0398724082934605}, {"arrows": "to", "fontweight": 2.007974481658692, "from": "doubledoors", "label": "0.00", "title": "Probability: 0.00", "to": "long_A", "value": 0.0015948963317384, "weight": 1.007974481658692}, {"arrows": "to", "fontweight": 2.0239234449760763, "from": "doubledoors", "label": "0.00", "title": "Probability: 0.00", "to": "catwalk", "value": 0.0047846889952153, "weight": 1.0239234449760766}, {"arrows": "to", "fontweight": 2.5633802816901405, "from": "outside_long_doors", "label": "0.11", "title": "Probability: 0.11", "to": "outside_tunnels", "value": 0.1126760563380281, "weight": 1.5633802816901405}, {"arrows": "to", "fontweight": 2.3361075544174135, "from": "outside_long_doors", "label": "0.07", "title": "Probability: 0.07", "to": "suicide", "value": 0.0672215108834827, "weight": 1.3361075544174135}, {"arrows": "to", "fontweight": 2.813060179257362, "from": "outside_long_doors", "label": "0.16", "title": "Probability: 0.16", "to": "mid", "value": 0.1626120358514724, "weight": 1.813060179257362}, {"arrows": "to", "fontweight": 2.3008962868117795, "from": "outside_long_doors", "label": "0.06", "title": "Probability: 0.06", "to": "upper_tunnels", "value": 0.0601792573623559, "weight": 1.3008962868117795}, {"arrows": "to", "fontweight": 4.538412291933419, "from": "outside_long_doors", "label": "0.51", "title": "Probability: 0.51", "to": "t_spawn", "value": 0.5076824583866837, "weight": 3.5384122919334184}, {"arrows": "to", "fontweight": 2.323303457106274, "from": "outside_long_doors", "label": "0.06", "title": "Probability: 0.06", "to": "doubledoors", "value": 0.0646606914212548, "weight": 1.323303457106274}, {"arrows": "to", "fontweight": 2.057618437900128, "from": "outside_long_doors", "label": "0.01", "title": "Probability: 0.01", "to": "upper_mid", "value": 0.0115236875800256, "weight": 1.057618437900128}, {"arrows": "to", "fontweight": 2.044814340588988, "from": "outside_long_doors", "label": "0.01", "title": "Probability: 0.01", "to": "long_A", "value": 0.0089628681177976, "weight": 1.044814340588988}, {"arrows": "to", "fontweight": 2.022407170294494, "from": "outside_long_doors", "label": "0.00", "title": "Probability: 0.00", "to": "catwalk", "value": 0.0044814340588988, "weight": 1.022407170294494}, {"arrows": "to", "fontweight": 2.714285714285714, "from": "upper_mid", "label": "0.14", "title": "Probability: 0.14", "to": "outside_tunnels", "value": 0.1428571428571428, "weight": 1.714285714285714}, {"arrows": "to", "fontweight": 2.5357142857142856, "from": "upper_mid", "label": "0.11", "title": "Probability: 0.11", "to": "mid", "value": 0.1071428571428571, "weight": 1.5357142857142856}, {"arrows": "to", "fontweight": 3.7857142857142856, "from": "upper_mid", "label": "0.36", "title": "Probability: 0.36", "to": "upper_tunnels", "value": 0.3571428571428571, "weight": 2.7857142857142856}, {"arrows": "to", "fontweight": 2.5357142857142856, "from": "upper_mid", "label": "0.11", "title": "Probability: 0.11", "to": "t_spawn", "value": 0.1071428571428571, "weight": 1.5357142857142856}, {"arrows": "to", "fontweight": 2.714285714285714, "from": "upper_mid", "label": "0.14", "title": "Probability: 0.14", "to": "doubledoors", "value": 0.1428571428571428, "weight": 1.714285714285714}, {"arrows": "to", "fontweight": 2.5357142857142856, "from": "upper_mid", "label": "0.11", "title": "Probability: 0.11", "to": "outside_long_doors", "value": 0.1071428571428571, "weight": 1.5357142857142856}, {"arrows": "to", "fontweight": 2.1785714285714284, "from": "upper_mid", "label": "0.04", "title": "Probability: 0.04", "to": "catwalk", "value": 0.0357142857142857, "weight": 1.1785714285714284}, {"arrows": "to", "fontweight": 3.590909090909091, "from": "long_A", "label": "0.32", "title": "Probability: 0.32", "to": "outside_tunnels", "value": 0.3181818181818182, "weight": 2.590909090909091}, {"arrows": "to", "fontweight": 2.227272727272727, "from": "long_A", "label": "0.05", "title": "Probability: 0.05", "to": "suicide", "value": 0.0454545454545454, "weight": 1.227272727272727}, {"arrows": "to", "fontweight": 2.227272727272727, "from": "long_A", "label": "0.05", "title": "Probability: 0.05", "to": "t_spawn", "value": 0.0454545454545454, "weight": 1.227272727272727}, {"arrows": "to", "fontweight": 2.4545454545454546, "from": "long_A", "label": "0.09", "title": "Probability: 0.09", "to": "doubledoors", "value": 0.0909090909090909, "weight": 1.4545454545454546}, {"arrows": "to", "fontweight": 4.2727272727272725, "from": "long_A", "label": "0.45", "title": "Probability: 0.45", "to": "outside_long_doors", "value": 0.4545454545454545, "weight": 3.2727272727272725}, {"arrows": "to", "fontweight": 2.227272727272727, "from": "long_A", "label": "0.05", "title": "Probability: 0.05", "to": "catwalk", "value": 0.0454545454545454, "weight": 1.227272727272727}, {"arrows": "to", "fontweight": 3.071428571428571, "from": "catwalk", "label": "0.21", "title": "Probability: 0.21", "to": "outside_tunnels", "value": 0.2142857142857142, "weight": 2.071428571428571}, {"arrows": "to", "fontweight": 2.3571428571428568, "from": "catwalk", "label": "0.07", "title": "Probability: 0.07", "to": "suicide", "value": 0.0714285714285714, "weight": 1.357142857142857}, {"arrows": "to", "fontweight": 3.071428571428571, "from": "catwalk", "label": "0.21", "title": "Probability: 0.21", "to": "upper_tunnels", "value": 0.2142857142857142, "weight": 2.071428571428571}, {"arrows": "to", "fontweight": 2.3571428571428568, "from": "catwalk", "label": "0.07", "title": "Probability: 0.07", "to": "t_spawn", "value": 0.0714285714285714, "weight": 1.357142857142857}, {"arrows": "to", "fontweight": 2.714285714285714, "from": "catwalk", "label": "0.14", "title": "Probability: 0.14", "to": "doubledoors", "value": 0.1428571428571428, "weight": 1.714285714285714}, {"arrows": "to", "fontweight": 3.071428571428571, "from": "catwalk", "label": "0.21", "title": "Probability: 0.21", "to": "outside_long_doors", "value": 0.2142857142857142, "weight": 2.071428571428571}, {"arrows": "to", "fontweight": 2.3571428571428568, "from": "catwalk", "label": "0.07", "title": "Probability: 0.07", "to": "upper_mid", "value": 0.0714285714285714, "weight": 1.357142857142857}, {"arrows": "to", "fontweight": 7.0, "from": "lower_tunnels", "label": "1.00", "title": "Probability: 1.00", "to": "outside_tunnels", "value": 1.0, "weight": 6.0}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "barnesHut": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.3,
+            "damping": 0.09,
+            "gravitationalConstant": -80000,
+            "springConstant": 0.001,
+            "springLength": 250
+        },
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
